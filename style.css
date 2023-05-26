@@ -21,3 +21,33 @@
     --fw-semiBold: 600;
     --fw-extraBold: 800;
 }
+
+.form-range {
+    color: red;
+    background-color: red;
+    position:relative;
+}
+
+.form-range::-moz-range-thumb {
+}
+
+.form-range::-ms-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    z-index: 2;    
+    position: absolute;
+}
+
+.form-range::-webkit-slider-runnable-track {
+    background: linear-gradient(cyan, green);
+    
+}
+
+.form-range::-moz-range-track {
+    
+}
+
+.form-range::-ms-track {
+    background: linear-gradient(red, orange);
+}
