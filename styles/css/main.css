@@ -54,19 +54,36 @@ input[type=range]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   box-shadow: none;
   border: none;
-  background: transparent;
+  background: hsl(224, 65%, 95%);
 }
 
 input[type=range]::-moz-range-track {
   -webkit-appearance: none;
   box-shadow: none;
   border: none;
-  background: transparent;
+  background: hsl(224, 65%, 95%);
 }
 
 input[type=range]::-ms-track {
   -webkit-appearance: none;
   box-shadow: none;
   border: none;
-  background: transparent;
+  background: hsl(224, 65%, 95%);
+}
+
+div {
+  position: relative;
+}
+div label {
+  position: absolute;
+  left: 0;
+  background-color: hsl(174, 77%, 80%);
+  width: calc(50% - 1rem);
+  height: 0.5rem;
+  margin-block: 0.5rem;
+  border-radius: 100vw;
+}
+
+main {
+  padding: 2rem;
 }/*# sourceMappingURL=main.css.map */

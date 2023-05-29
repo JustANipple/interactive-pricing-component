@@ -17,3 +17,10 @@
         opacity: 50%;
     }
 }
+
+@mixin track() {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: v.$light-grayish-blue-slider;
+}
