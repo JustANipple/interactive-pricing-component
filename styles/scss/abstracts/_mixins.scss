@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as v;
+
+@mixin thumb() {
+    -webkit-appearance: none;
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 100vw;
+    background: 
+    no-repeat url(../../images/icon-slider.svg) center,
+    v.$strong-cyan;
+    cursor: grab;
+    box-shadow: 0 .5rem 1rem 0 v.$soft-cyan;
+    transition: all .3s ease-in-out;
+    transform: translateY(-.75rem);
+
+    &:hover {
+        opacity: 50%;
+    }
+}

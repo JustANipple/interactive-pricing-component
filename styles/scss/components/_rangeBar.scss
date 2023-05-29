@@ -1,5 +1,37 @@
 @use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
 
-body { 
-    
+/* Input Thumb */
+input[type="range"]::-webkit-slider-thumb {
+    @include m.thumb();
 }
+  
+input[type="range"]::-moz-range-thumb {
+    @include m.thumb();
+}
+  
+input[type="range"]::-ms-thumb {
+    @include m.thumb();
+}
+
+/* Input Track */
+input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+  input[type=range]::-moz-range-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+  input[type="range"]::-ms-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
