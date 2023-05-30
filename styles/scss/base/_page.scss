@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as v;
+
+body {
+    font-family: v.$font-family;
+    //[background-image] [background-repeat] [background-position]
+    background: url(../../images/bg-pattern.svg) no-repeat 0 -3rem;
+    font-size: calc(v.$font-size / 1.25);
+}
+
+.sr-only {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+}

@@ -1,0 +1,14 @@
+@use "../abstracts/variables" as v;
+
+.header{
+    background: url(../../images/pattern-circles.svg) no-repeat center;
+
+    .header_title {
+        color: v.$dark-desaturated-blue;
+    }
+
+    .header_description {
+        color: v.$grayish-blue;
+        padding-inline: 4.5rem;
+    }
+}

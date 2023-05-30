@@ -84,6 +84,30 @@ div label {
   border-radius: 100vw;
 }
 
-main {
-  padding: 2rem;
+.header {
+  background: url(../../images/pattern-circles.svg) no-repeat center;
+}
+.header .header_title {
+  color: hsl(227, 35%, 25%);
+}
+.header .header_description {
+  color: hsl(225, 20%, 60%);
+  padding-inline: 4.5rem;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: url(../../images/bg-pattern.svg) no-repeat 0 -3rem;
+  font-size: 0.7504rem;
+}
+
+.sr-only {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
 }/*# sourceMappingURL=main.css.map */
