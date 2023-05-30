@@ -5,6 +5,7 @@ body {
     //[background-image] [background-repeat] [background-position]
     background: url(../../images/bg-pattern.svg) no-repeat 0 -3rem;
     font-size: calc(v.$font-size / 1.25);
+    color: v.$grayish-blue;
 }
 
 .sr-only {

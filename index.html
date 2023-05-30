@@ -28,37 +28,42 @@
 </head>
 <body>
 
-  <main class="main_container container-fluid px-4 py-5">
+  <main class="main_container  container-fluid px-4 py-5">
 
     <h1 class="sr-only">Interactive pricing component</h1>
 
-    <div class="header container-fluid text-center pt-5 pb-4">
-      <p class="header_title h5 fw-bold">Simple, traffic-based pricing</p>
-      <p class="header_description lh-lg">
+    <div class="header  container-fluid text-center pt-5 pb-4">
+      <p class="header_title  h5 fw-bold">Simple, traffic-based pricing</p>
+      <p class="header_description  lh-lg">
         Sign-up for our 30-day trial. No credit card required.
       </p>
     </div>
 
-    <div class="pricing container-fluid px-4 text-center">
-      <p class="pricing_pageviews text-uppercase fw-bold">
+    <div class="pricing  container-fluid px-4 py-5 my-3 text-center shadow rounded">
+      <p class="pricing_pageviews  text-uppercase fw-bold">
         <span class="pageviews_value">100k</span> Pageviews
       </p>
+      <div class="my-4">
+        <label for="slideRange"></label>
+        <input type="range" class="form-range" min="0" max="200000" id="slideRange">
+      </div>
+      <div class="pricing_bill  d-flex justify-content-center align-items-center gap-2">
+        <p class="bill_value  fw-bold display-5">$16.00</p>
+        <p class="bill_period"> / month</p>
+      </div>
+      <div class="billing_period  d-flex justify-content-center align-items-center gap-2">
+        <p class="period_monthly  my-auto">Monthly Billing</p>
+        <div class="form-check form-switch my-auto">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        </div>
+        <p class="perdio_yearly  my-auto">Yearly Billing</p>
+      </div>
     </div>
 
 
   </main>
 
-  <!-- 
-  <main>
-    <div>
-      <label for="slideRange"></label>
-      <input type="range" class="form-range" min="0" max="100000" id="slideRange">
-    </div>
-
-  </main>
-
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  <!--
 
   Pageviews
   $ /month

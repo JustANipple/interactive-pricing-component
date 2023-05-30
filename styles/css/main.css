@@ -6,8 +6,8 @@
 /* Input Thumb */
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  height: 2.25rem;
-  width: 2.25rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 100vw;
   background: no-repeat url(../../images/icon-slider.svg) center, hsl(174, 86%, 45%);
   cursor: grab;
@@ -21,8 +21,8 @@ input[type=range]::-webkit-slider-thumb:hover {
 
 input[type=range]::-moz-range-thumb {
   -webkit-appearance: none;
-  height: 2.25rem;
-  width: 2.25rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 100vw;
   background: no-repeat url(../../images/icon-slider.svg) center, hsl(174, 86%, 45%);
   cursor: grab;
@@ -36,8 +36,8 @@ input[type=range]::-moz-range-thumb:hover {
 
 input[type=range]::-ms-thumb {
   -webkit-appearance: none;
-  height: 2.25rem;
-  width: 2.25rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 100vw;
   background: no-repeat url(../../images/icon-slider.svg) center, hsl(174, 86%, 45%);
   cursor: grab;
@@ -80,8 +80,11 @@ div label {
   background-color: hsl(174, 77%, 80%);
   width: calc(50% - 1rem);
   height: 0.5rem;
-  margin-block: 0.5rem;
+  margin-block: 0.875rem;
   border-radius: 100vw;
+}
+div .form-range {
+  height: 2.25rem;
 }
 
 .header {
@@ -91,14 +94,40 @@ div label {
   color: hsl(227, 35%, 25%);
 }
 .header .header_description {
-  color: hsl(225, 20%, 60%);
   padding-inline: 4.5rem;
+}
+
+.pricing {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.pricing_pageviews {
+  letter-spacing: 0.125rem;
+}
+
+.bill_value {
+  color: hsl(227, 35%, 25%);
+}
+
+.form-check .form-check-input {
+  height: 1.475rem;
+  width: 2.75rem;
+  margin-top: 0;
+  background-color: hsl(223, 50%, 87%);
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  transition: all 0.25s ease-in-out;
+}
+.form-check .form-check-input:hover {
+  background-color: hsl(174, 77%, 80%);
+  border-color: hsl(174, 77%, 80%);
+  cursor: pointer;
 }
 
 body {
   font-family: "Manrope", sans-serif;
   background: url(../../images/bg-pattern.svg) no-repeat 0 -3rem;
   font-size: 0.7504rem;
+  color: hsl(225, 20%, 60%);
 }
 
 .sr-only {

@@ -36,7 +36,11 @@ div {
         background-color: v.$soft-cyan;
         width: calc(50% - 1rem);
         height: .5rem;
-        margin-block: .5rem;
+        margin-block: .875rem;
         border-radius: 100vw;
+    }
+
+    .form-range {
+        height: 2.25rem;
     }
 }
