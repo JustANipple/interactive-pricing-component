@@ -12,3 +12,14 @@
     color: v.$dark-desaturated-blue;
 }
 
+.billing_period {
+    position: relative;
+    max-width: fit-content;
+}
+
+.badge {
+    background-color: v.$light-grayish-red;
+    color: v.$light-red;
+    position: absolute;
+    right: -2.5rem;
+}

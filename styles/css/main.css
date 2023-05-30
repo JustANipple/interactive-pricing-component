@@ -109,6 +109,18 @@ div .form-range {
   color: hsl(227, 35%, 25%);
 }
 
+.billing_period {
+  position: relative;
+  max-width: fit-content;
+}
+
+.badge {
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  position: absolute;
+  right: -2.5rem;
+}
+
 .form-check .form-check-input {
   height: 1.475rem;
   width: 2.75rem;
