@@ -80,11 +80,11 @@ div label {
   background-color: hsl(174, 77%, 80%);
   width: calc(50% - 1rem);
   height: 0.5rem;
-  margin-block: 0.875rem;
+  margin-block: 1rem;
   border-radius: 100vw;
 }
 div .form-range {
-  height: 2.25rem;
+  height: 2.5rem;
 }
 
 .header {
