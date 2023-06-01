@@ -19,3 +19,7 @@ range.addEventListener("input", (e) => {
     //managing billing price
     bill.textContent = "$" + Number((0.00016 * val).toFixed(2));
 });
+
+range.addEventListener("dragstart", () => {
+    alert();
+})

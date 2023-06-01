@@ -21,14 +21,70 @@
         .billing_period {
             gap: .75rem;
             position: relative;
+            width: fit-content;
     
             .badge {
                 position: absolute;
-                right: -1.125rem;
+                right: -2.75rem;
                 background-color: v.$light-grayish-red;
                 color: v.$light-red;
                 font-size: calc(v.$font-size / 1.5);
+                max-width: 2.125rem;
+                overflow: hidden;
             }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .price {
+            margin-top: 3rem !important;
+            padding-block: 2.75rem 1rem !important;
+            padding-inline: 3rem !important;
+            display: grid !important;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+            grid-template-areas: 
+            "pages price"
+            "range range"
+            "bill bill";
+            row-gap: 2rem !important;
+
+            .price_pageviews {
+                grid-area: pages;
+                width: fit-content;
+                margin: 0 !important;
+                font-size: calc(v.$font-size / 1.1);
+            }
+
+            .range_block {
+                grid-area: range;
+            }
+
+            .pricing_bill {
+                grid-area: price;
+
+                .bill_value {
+                    font-size: calc(v.$font-size * 2.5);
+                }
+
+                .bill_period {
+                    font-size: calc(v.$font-size);
+                }
+            }
+
+            .billing_period {
+                grid-area: bill;
+                padding: 0 !important;
+                margin-bottom: auto;
+
+                .badge {
+                    max-width: fit-content;
+                    right: -6rem;
+                }
+            }
+
+
         }
     }
 
@@ -50,6 +106,32 @@
             font-size: calc(v.$font-size / 1.25);
             padding-block: .675rem;
             max-width: fit-content;
+            transition: color .25s ease-in-out;
+
+            &:hover {
+                color: v.$white;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .start_trial {
+            padding-block: 2rem !important;
+            padding-inline: 2rem;
+            flex-direction: row !important;
+            align-items: center;
+            
+            .features_list {
+                flex: 1;
+                
+                li {
+                    margin: unset !important;
+                }
+            }
+
+            .btn {
+                flex: 1;
+            }
         }
     }
 }

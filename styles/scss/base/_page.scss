@@ -6,6 +6,11 @@ body {
     background: url(../../images/bg-pattern.svg) no-repeat 0 -3rem;
     font-size: calc(v.$font-size / 1.25);
     color: v.$grayish-blue;
+
+    @media screen and (min-width: 768px) {
+        background-position: top center;
+        background-color: v.$very-pale-blue;
+    }
 }
 
 .sr-only {
@@ -17,4 +22,11 @@ body {
     top: 0;
     left: 0;
     color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+    .block_container {
+        max-width: 33.75rem;
+        margin-inline: auto;
+    }
 }

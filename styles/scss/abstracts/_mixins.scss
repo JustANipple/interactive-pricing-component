@@ -9,12 +9,18 @@
     no-repeat url(../../images/icon-slider.svg) center,
     v.$strong-cyan;
     cursor: grab;
-    box-shadow: 0 .5rem 1rem 0 v.$soft-cyan;
+    box-shadow: 0 1rem 2rem 0 v.$strong-cyan;
     transition: all .3s ease-in-out;
     transform: translateY(-.75rem);
 
     &:hover {
         opacity: 50%;
+    }
+
+    &:active {
+        background-color: v.$strong-cyan;
+        box-shadow: 0 1rem 2rem 0 v.$strong-cyan;
+        opacity: 1;
     }
 }
 
