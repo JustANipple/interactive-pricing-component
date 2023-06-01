@@ -1,137 +1,133 @@
 @use "../abstracts/variables" as v;
 
-.block_container {
-    background-color: v.$white;
+#price {
 
-    .price {
-    
-        .price_pageviews {
-            letter-spacing: .125rem;
-            font-size: calc(v.$font-size / 1.25);
+    #price_pageviews {
+        letter-spacing: .125rem;
+        font-size: calc(v.$font-size / 1.25);
+    }
+
+    .bill_value {
+        color: v.$dark-desaturated-blue;
+    }
+
+    .bill_period {
+        font-size: calc(v.$font-size / 1.125);
+    }
+
+    .billing_period {
+        gap: .75rem;
+        position: relative;
+        width: fit-content;
+
+        .badge {
+            position: absolute;
+            right: -2.75rem;
+            background-color: v.$light-grayish-red;
+            color: v.$light-red;
+            font-size: calc(v.$font-size / 1.5);
+            max-width: 2.125rem;
+            overflow: hidden;
         }
-    
-        .bill_value {
-            color: v.$dark-desaturated-blue;
-        }
-    
-        .bill_period {
-            font-size: calc(v.$font-size / 1.125);
-        }
-    
-        .billing_period {
-            gap: .75rem;
-            position: relative;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #price {
+        margin-top: 3rem !important;
+        padding-block: 2.75rem 1rem !important;
+        padding-inline: 3rem !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        grid-template-areas: 
+        "pages price"
+        "range range"
+        "bill bill";
+        row-gap: 2rem !important;
+
+        #price_pageviews {
+            grid-area: pages;
             width: fit-content;
-    
+            margin: 0 !important;
+            font-size: calc(v.$font-size / 1.1);
+        }
+
+        .range_block {
+            grid-area: range;
+        }
+
+        .pricing_bill {
+            grid-area: price;
+
+            .bill_value {
+                font-size: calc(v.$font-size * 2.5);
+            }
+
+            .bill_period {
+                font-size: calc(v.$font-size);
+            }
+        }
+
+        .billing_period {
+            grid-area: bill;
+            padding: 0 !important;
+            margin-bottom: auto;
+
             .badge {
-                position: absolute;
-                right: -2.75rem;
-                background-color: v.$light-grayish-red;
-                color: v.$light-red;
-                font-size: calc(v.$font-size / 1.5);
-                max-width: 2.125rem;
-                overflow: hidden;
+                max-width: fit-content;
+                right: -6rem;
             }
+        }
+
+
+    }
+}
+
+.start_trial {
+
+    .features_list {
+        list-style-image: url(../../images/icon-check.svg);
+        
+        li {
+            max-width: fit-content;
+            padding-inline: .75rem;
         }
     }
 
-    @media screen and (min-width: 768px) {
-        .price {
-            margin-top: 3rem !important;
-            padding-block: 2.75rem 1rem !important;
-            padding-inline: 3rem !important;
-            display: grid !important;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            align-items: center;
-            grid-template-areas: 
-            "pages price"
-            "range range"
-            "bill bill";
-            row-gap: 2rem !important;
+    .btn {
+        background-color: v.$dark-desaturated-blue;
+        color: v.$light-grayish-blue;
+        border-radius: 100vw;
+        font-size: calc(v.$font-size / 1.25);
+        padding-block: .675rem;
+        max-width: fit-content;
+        transition: color .25s ease-in-out;
 
-            .price_pageviews {
-                grid-area: pages;
-                width: fit-content;
-                margin: 0 !important;
-                font-size: calc(v.$font-size / 1.1);
-            }
-
-            .range_block {
-                grid-area: range;
-            }
-
-            .pricing_bill {
-                grid-area: price;
-
-                .bill_value {
-                    font-size: calc(v.$font-size * 2.5);
-                }
-
-                .bill_period {
-                    font-size: calc(v.$font-size);
-                }
-            }
-
-            .billing_period {
-                grid-area: bill;
-                padding: 0 !important;
-                margin-bottom: auto;
-
-                .badge {
-                    max-width: fit-content;
-                    right: -6rem;
-                }
-            }
-
-
+        &:hover {
+            color: v.$white;
         }
     }
+}
 
+@media screen and (min-width: 768px) {
     .start_trial {
-
+        padding-block: 2rem !important;
+        padding-inline: 2rem;
+        flex-direction: row !important;
+        align-items: center;
+        
         .features_list {
-            list-style-image: url(../../images/icon-check.svg);
+            flex: 1;
             
             li {
-                max-width: fit-content;
-                padding-inline: .75rem;
+                margin: unset !important;
             }
         }
 
         .btn {
-            background-color: v.$dark-desaturated-blue;
-            color: v.$light-grayish-blue;
-            border-radius: 100vw;
-            font-size: calc(v.$font-size / 1.25);
-            padding-block: .675rem;
-            max-width: fit-content;
-            transition: color .25s ease-in-out;
-
-            &:hover {
-                color: v.$white;
-            }
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-        .start_trial {
-            padding-block: 2rem !important;
-            padding-inline: 2rem;
-            flex-direction: row !important;
-            align-items: center;
-            
-            .features_list {
-                flex: 1;
-                
-                li {
-                    margin: unset !important;
-                }
-            }
-
-            .btn {
-                flex: 1;
-            }
+            flex: 1;
         }
     }
 }

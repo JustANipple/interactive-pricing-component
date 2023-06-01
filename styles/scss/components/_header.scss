@@ -1,27 +1,27 @@
 @use "../abstracts/variables" as v;
 
-.header{
+#header{
     background: url(../../images/pattern-circles.svg) no-repeat center;
 
-    .header_title {
+    #header_title {
         color: v.$dark-desaturated-blue;
     }
 
-    .header_description {
+    #header_description {
         padding-inline: 3.5rem;
         font-size: calc(v.$font-size / 1.125);
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header {
+    #header {
         margin-block: 1rem;
 
-        .header_title {
+        #header_title {
             font-size: calc(v.$font-size * 1.875);
         }
 
-        .header_description {
+        #header_description {
             font-size: calc(v.$font-size);
         }
     }
