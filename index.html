@@ -28,51 +28,56 @@
 </head>
 <body>
   <!-- Main -->
-  <main class="main_container">
+  <main class="main_container  py-5 px-4">
     <h1 class="sr-only">Interactive pricing component</h1>
     <!-- Header -->
-    <div class="header">
-      <p class="header_title">Simple, traffic-based pricing</p>
-      <p class="header_description">Sign-up for our 30-day trial. No credit card required.</p>
+    <div class="header  text-center pt-5 pb-4 px-3">
+      <p class="header_title  h5 fw-bold">Simple, traffic-based pricing</p>
+      <p class="header_description  lh-base">Sign-up for our 30-day trial. No credit card required.</p>
     </div>
-    <!-- Pricing block -->
-    <div class="pricing">
-      <!-- Billing selector -->
-      <div>
-        <p class="pricing_pageviews">
+
+    <div class="block_container  rounded-2 shadow">
+      <!-- Price selector -->
+      <div class="price  d-flex flex-column gap-4 p-4 mt-4 text-center">
+
+        <p class="price_pageviews text-uppercase fw-bold mt-2 mb-0">
           <span class="pageviews_value">100k</span> Pageviews
         </p>
+        <!-- Range input -->
         <div>
           <label for="slideRange"></label>
           <input type="range" class="form-range" min="0" max="200000" id="slideRange">
         </div>
-        <div class="pricing_bill">
-          <p class="bill_value">$16.00</p>
-          <p class="bill_period"> / month</p>
+        <!-- Bill -->
+        <div class="pricing_bill  d-flex justify-content-center align-items-center gap-2">
+          <p class="bill_value  display-5 fw-bold m-0">$16.00</p>
+          <p class="bill_period  m-0"> / month</p>
         </div>
-        <div class="billing_period">
-          <p class="period_monthly">Monthly Billing</p>
-          <div class="form-check form-switch">
+        <!-- Bill period-->
+        <div class="billing_period  d-flex justify-content-center align-items-center py-3">
+          <p class="period_monthly  m-0">Monthly Billing</p>
+          <div class="form-check form-switch  m-0">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
           </div>
-          <p class="perdio_yearly">Yearly Billing</p>
-          <span class="badge rounded-pill">-25%</span>
+          <p class="period_yearly  m-0">Yearly Billing</p>
+          <span class="badge rounded-pill py-1 px-2">-25%</span>
         </div>
+
       </div>
 
-      <hr>
+      <hr class="m-0">
 
-      <!-- Start -->
-      <div class="pb-3 d-flex flex-column gap-3">
-        <ul class="list">
-          <li>Unlimited websites</li>
-          <li>100% data ownership</li>
-          <li>Email reports</li>
+      <!-- Confirm trial -->
+      <div class="start_trial  pt-3 pb-4 d-flex flex-column gap-4">
+        <ul class="features_list d-flex flex-column gap-2 my-1">
+          <li class="mx-auto">Unlimited websites</li>
+          <li class="mx-auto">100% data ownership</li>
+          <li class="mx-auto">Email reports</li>
         </ul>
-        <button type="button" class="btn">Start my trial</button>
+        <button type="button" class="btn mx-auto my-1 px-5">Start my trial</button>
       </div>
-
     </div>
+
 
   </main>
 

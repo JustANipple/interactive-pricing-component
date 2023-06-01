@@ -1,43 +1,55 @@
 @use "../abstracts/variables" as v;
 
-.pricing {
+.block_container {
     background-color: v.$white;
-}
 
-.pricing_pageviews {
-    letter-spacing: .125rem;
-}
-
-.bill_value {
-    color: v.$dark-desaturated-blue;
-}
-
-.billing_period {
-    position: relative;
-    max-width: fit-content;
-}
-
-.badge {
-    background-color: v.$light-grayish-red;
-    color: v.$light-red;
-    position: absolute;
-    right: -2.75rem;
-    font-size: calc(v.$font-size / 1.5);
-}
-
-.list {
-    list-style-image: url(../../images/icon-check.svg);
+    .price {
     
-    li {
-        padding-inline: .5rem;
+        .price_pageviews {
+            letter-spacing: .125rem;
+            font-size: calc(v.$font-size / 1.25);
+        }
+    
+        .bill_value {
+            color: v.$dark-desaturated-blue;
+        }
+    
+        .bill_period {
+            font-size: calc(v.$font-size / 1.125);
+        }
+    
+        .billing_period {
+            gap: .75rem;
+            position: relative;
+    
+            .badge {
+                position: absolute;
+                right: -1.125rem;
+                background-color: v.$light-grayish-red;
+                color: v.$light-red;
+                font-size: calc(v.$font-size / 1.5);
+            }
+        }
     }
-}
 
-.btn {
-    background-color: v.$dark-desaturated-blue;
-    color: v.$light-grayish-blue;
-    border-radius: 100vw;
-    font-size: calc(v.$font-size / 1.25);
-    padding-block: .675rem;
-    max-width: fit-content;
+    .start_trial {
+
+        .features_list {
+            list-style-image: url(../../images/icon-check.svg);
+            
+            li {
+                max-width: fit-content;
+                padding-inline: .75rem;
+            }
+        }
+
+        .btn {
+            background-color: v.$dark-desaturated-blue;
+            color: v.$light-grayish-blue;
+            border-radius: 100vw;
+            font-size: calc(v.$font-size / 1.25);
+            padding-block: .675rem;
+            max-width: fit-content;
+        }
+    }
 }

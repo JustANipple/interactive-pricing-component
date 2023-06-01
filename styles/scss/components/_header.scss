@@ -6,4 +6,9 @@
     .header_title {
         color: v.$dark-desaturated-blue;
     }
+
+    .header_description {
+        padding-inline: 3.5rem;
+        font-size: calc(v.$font-size / 1.125);
+    }
 }
