@@ -27,38 +27,35 @@
 
 </head>
 <body>
-
-  <main class="main_container  container-fluid px-4 py-5">
-
+  <!-- Main -->
+  <main class="main_container">
     <h1 class="sr-only">Interactive pricing component</h1>
-
-    <div class="header  container-fluid text-center pt-5 pb-4">
-      <p class="header_title  h5 fw-bold">Simple, traffic-based pricing</p>
-      <p class="header_description  lh-lg">
-        Sign-up for our 30-day trial. No credit card required.
-      </p>
+    <!-- Header -->
+    <div class="header">
+      <p class="header_title">Simple, traffic-based pricing</p>
+      <p class="header_description">Sign-up for our 30-day trial. No credit card required.</p>
     </div>
     <!-- Pricing block -->
-    <div class="pricing  my-3 text-center shadow rounded">
+    <div class="pricing">
       <!-- Billing selector -->
-      <div class="pt-4 px-4 d-flex flex-column gap-4">
-        <p class="pricing_pageviews  text-uppercase fw-bold m-auto">
+      <div>
+        <p class="pricing_pageviews">
           <span class="pageviews_value">100k</span> Pageviews
         </p>
         <div>
           <label for="slideRange"></label>
           <input type="range" class="form-range" min="0" max="200000" id="slideRange">
         </div>
-        <div class="pricing_bill  d-flex justify-content-center align-items-center gap-2">
-          <p class="bill_value  fw-bold display-5 m-0">$16.00</p>
-          <p class="bill_period m-0"> / month</p>
+        <div class="pricing_bill">
+          <p class="bill_value">$16.00</p>
+          <p class="bill_period"> / month</p>
         </div>
-        <div class="billing_period  d-flex justify-content-center align-items-center gap-2 mx-auto py-3">
-          <p class="period_monthly  my-auto">Monthly Billing</p>
-          <div class="form-check form-switch my-auto">
+        <div class="billing_period">
+          <p class="period_monthly">Monthly Billing</p>
+          <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
           </div>
-          <p class="perdio_yearly  my-auto">Yearly Billing</p>
+          <p class="perdio_yearly">Yearly Billing</p>
           <span class="badge rounded-pill">-25%</span>
         </div>
       </div>
@@ -66,33 +63,18 @@
       <hr>
 
       <!-- Start -->
-      <div>
-        <ul>
+      <div class="pb-3 d-flex flex-column gap-3">
+        <ul class="list">
           <li>Unlimited websites</li>
           <li>100% data ownership</li>
-          <li>Unlimited websites</li>
+          <li>Email reports</li>
         </ul>
+        <button type="button" class="btn">Start my trial</button>
       </div>
 
     </div>
 
-
   </main>
-
-  <!--
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  -->
 
 </body>
 </html>

@@ -21,5 +21,23 @@
     background-color: v.$light-grayish-red;
     color: v.$light-red;
     position: absolute;
-    right: -2.5rem;
+    right: -2.75rem;
+    font-size: calc(v.$font-size / 1.5);
+}
+
+.list {
+    list-style-image: url(../../images/icon-check.svg);
+    
+    li {
+        padding-inline: .5rem;
+    }
+}
+
+.btn {
+    background-color: v.$dark-desaturated-blue;
+    color: v.$light-grayish-blue;
+    border-radius: 100vw;
+    font-size: calc(v.$font-size / 1.25);
+    padding-block: .675rem;
+    max-width: fit-content;
 }
